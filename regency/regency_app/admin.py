@@ -39,19 +39,19 @@ class OrdersAdmin(admin.ModelAdmin):
       "fields": (("character", "turn"),)
     }),
     ("Command 1", {
-      "fields": (("command_1_type", "command_1_player_target"), ("command_1_region_source", "command_1_region_target"),)
+      "fields": (("command_1_type", "command_1_player_target", "command_1_soldier"), ("command_1_region_source", "command_1_region_target"),)
     }),
     ("Command 2", {
-      "fields": (("command_2_type", "command_2_player_target"), ("command_2_region_source", "command_2_region_target"),)
+      "fields": (("command_2_type", "command_2_player_target", "command_2_soldier"), ("command_2_region_source", "command_2_region_target"),)
     }),
     ("Command 3", {
-      "fields": (("command_3_type", "command_3_player_target"), ("command_3_region_source", "command_3_region_target"),)
+      "fields": (("command_3_type", "command_3_player_target", "command_3_soldier"), ("command_3_region_source", "command_3_region_target"),)
     }),
     ("Command 4", {
-      "fields": (("command_4_type", "command_4_player_target"), ("command_4_region_source", "command_4_region_target"),)
+      "fields": (("command_4_type", "command_4_player_target", "command_4_soldier"), ("command_4_region_source", "command_4_region_target"),)
     }),
     ("Command 5", {
-      "fields": (("command_5_type", "command_5_player_target"), ("command_5_region_source", "command_5_region_target"),)
+      "fields": (("command_5_type", "command_5_player_target", "command_5_soldier"), ("command_5_region_source", "command_5_region_target"),)
     }),
   )
 
