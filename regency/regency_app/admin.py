@@ -66,7 +66,7 @@ class CharacterAdmin(admin.ModelAdmin):
 
   fieldsets = (
     (None, {
-      "fields": (("name", "alive"), "player")
+      "fields": ("name",("race", "alive"), "player")
     }),
     ("Talents", {
       "fields": ("martial_stat",
