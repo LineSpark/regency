@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'regency_app.apps.RegencyAppConfig',
+    'bp.apps.BpConfig',
 ]
 
 MIDDLEWARE = [

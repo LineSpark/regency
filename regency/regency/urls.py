@@ -21,6 +21,7 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('bp/', include('bp.urls')),
     path('game/', include('regency_app.urls')),
     path('', RedirectView.as_view(url="/game/", permanent=True))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
