@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Boiler Plate</title>
+
+    {% load static %}
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'bp/img/core-img/favicon.ico' %}">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'bp/style.css' %}">
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+
+<!-- Preloader -->
+<div class="preloader d-flex align-items-center justify-content-center">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+
+<!-- ##### Header Area Start ##### -->
+<header class="header-area wow fadeInDown" data-wow-delay="500ms">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <!-- Logo Area -->
+                    <div class="logo">
+                        <a href="index.html"><img src="{% static 'bp/img/core-img/Regency_Logo.png' %}" alt=""></a>
+                    </div>
+
+                    <!-- Search & Login Area -->
+                    <div class="search-login-area d-flex align-items-center">
+                        <!-- Top Search Area -->
+                        <div class="top-search-area">
+                            <form action="#" method="post">
+                                {% csrf_token %}
+                                <input type="search" name="top-search" id="topSearch" placeholder="Search">
+                                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <!-- Login Area -->
+                        <div class="login-area">
+                            <a href="#"><span>Login / Register</span> <i class="fa fa-lock" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Area -->
+    <div class="egames-main-menu" id="sticker">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="egamesNav">
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">Games</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Join Game</a></li>
+                                        <li><a href="#">Start Game</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Players</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Top 10</a></li>
+                                        <li><a href="#">My Stats</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Characters</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Design a Hero</a></li>
+                                        <li><a href="#">Past Heroes</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Reviews</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Game Review</a></li>
+                                        <li><a href="#">Single Game Review</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ##### Header Area End ##### -->
+
+
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js -->
+<script src="{% static 'bp/js/jquery/jquery-2.2.4.min.js' %}"></script>
+<!-- Popper js -->
+<script src="{% static 'bp/js/bootstrap/popper.min.js' %}"></script>
+<!-- Bootstrap js -->
+<script src="{% static 'bp/js/bootstrap/bootstrap.min.js' %}"></script>
+<!-- All Plugins js -->
+<script src="{% static 'bp/js/plugins/plugins.js' %}"></script>
+<!-- Active js -->
+<script src="{% static 'bp/js/active.js' %}"></script>
+</body>
+</html>

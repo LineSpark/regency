@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regency</title>
+</head>
+<body>
+    <h1>Home</h1>
+    {% if games_list %}
+        <ol>
+            {% for game in games_list %}
+            <li><a href="/players/{{ game.pk }}">{{ game }}</a></li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <p>No Games Available</p>
+    {% endif %}
+</body>
+</html>
