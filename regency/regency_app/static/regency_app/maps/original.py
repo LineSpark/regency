@@ -41,6 +41,10 @@ g = {
 info = {
   1: {
     "name": "Daxia",
+<<<<<<< HEAD
+=======
+    "short_name": "DAX",
+>>>>>>> origin/master
     "type": "Forest",
     "towns": 1,
     "fields": 0,
@@ -346,6 +350,7 @@ def check_links(v: dict):
         print("{} not in {}".format(key1, key2))
 
 if __name__ == "__main__":
+<<<<<<< HEAD
   # import networkx as nx
   # import matplotlib.pyplot as plt
   #
@@ -365,3 +370,20 @@ if __name__ == "__main__":
   for key in info:
     info[key]["short_name"] = info[key]["name"][0:3].upper()
   print(info)
+=======
+  import networkx as nx
+  import matplotlib.pyplot as plt
+
+  edges = set()
+  for key in g:
+    for val in g[key]:
+      if (key, val) not in edges and (val, key) not in edges:
+        edges.add((key, val))
+  edges = [(x[0], x[1], {"color": "blue" if info[x[0]]["type"] == "Sea" else "black"}) for x in edges]
+  print(edges)
+  G = nx.Graph()
+  G.add_edges_from(ebunch_to_add=edges)
+  nx.draw(G, with_labels=True,  pos=nx.kamada_kawai_layout(G))
+  # nx.draw_spring(G)
+  plt.show()
+>>>>>>> origin/master
